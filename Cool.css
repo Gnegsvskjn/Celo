@@ -1,0 +1,73 @@
+.titleBar__01af6:not(.typeMacOS-3V4xXE)::after {
+  content: "Vencord";
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  color: rgb(170, 170, 170);
+  display: block;
+  height: 16px;
+  width: fit-content;
+  pointer-events: none;
+  font-size: 14px;
+}
+.wordmark__0d178{display: none;}
+.wrapper_d281dd[data-list-item-id="guildsnav___home"] .childWrapper__01b9c {
+    background: url(https://i.ibb.co/qFxV3mJ/image.png") no-repeat center !important;
+    background-size: cover !important;
+}
+.assetsLargeImageSpotify-17ME3M {
+  animation: spin 3s linear infinite;
+  border-radius: 50%
+}
+/* the animation  */
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes unreadRainbow { /*animation*/
+    50% {
+        background-position: 100% 50%;
+    }
+}
+.wrapper-25eVIn foreignObject { /*Round server channels*/
+    mask: unset;
+    border-radius: 1000%;
+}
+.pill-1z4sAY { /*Makes ring visible*/
+    overflow: visible!important;
+}
+.item-2hkk8m[style*="height: 8px"]::before { /*Unread server ring*/
+    content: '';
+    position: absolute;
+    top: -22px;
+    left: 14px;
+    width: 52px;
+    height: 52px!important;
+    border-radius: 41%;
+    background: linear-gradient(120deg,
+    rgb(0,64,255),
+    rgb(0,64,255),
+    rgb(0,64,255),
+    rgb(128, 0, 255),
+    rgb(255, 0, 0),
+    rgb(255, 145, 0),
+    rgb(2, 190, 2),
+    rgb(0,64,255),
+    rgb(128, 0, 255),
+    rgb(255, 0, 0),
+    rgb(255, 145, 0),
+    rgb(2, 190, 2),
+    rgb(0, 0, 0)
+    );
+    background-size: 200% 200%;
+    background-position: 0 50%;
+    animation: unreadRainbow 4s infinite;
+    transition: 0.25s ease;
+}
+.wrapper-1BJsBx { /*Matches png server icons with default background*/
+    background-color: var(--background-tertiary);
+}
